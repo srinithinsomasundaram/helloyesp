@@ -56,9 +56,15 @@ export default function FoundersStory() {
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ delay: 0.3 }}
-                            className="relative aspect-[4/5] rounded-[4rem] overflow-hidden shadow-2xl border border-slate-100 group bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900"
+                            className="relative aspect-[4/5] rounded-[4rem] overflow-hidden shadow-2xl border border-slate-100 group bg-slate-900"
                         >
-                            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-100 contrast-150 mix-blend-overlay"></div>
+                            <Image
+                                src="/srinithin.jpg"
+                                alt="Srinithin Somasundaram - Founder of Yesp"
+                                fill
+                                className="object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
+                            />
+                            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-30 brightness-100 contrast-150 mix-blend-overlay pointer-events-none"></div>
                             <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-slate-950/90 to-transparent" />
                             <div className="absolute bottom-12 left-12 right-12 space-y-2">
                                 <p className="text-4xl font-black text-white leading-none">Srinithin <br />Somasundaram</p>
