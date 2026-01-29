@@ -1,9 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'About Yesp Studio | Architects of Reliability',
-    description: 'Yesp Studio was founded to solve the technical debt of manual operations. We build bulletproof automation systems that work quietly in the background.',
-    keywords: 'business automation, AI automation agency, workflow optimization'
+    title: 'About YESP Studio | Engineering Bulletproof Business Logic',
+    description: 'Learn about the philosophy and engineering standards behind YESP Studio. Architecting reliability for high-leverage service businesses.',
 };
 
 export default function AboutLayout({

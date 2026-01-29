@@ -73,14 +73,11 @@ export default function Home() {
                         <span>Business-first automation</span>
                     </div>
                     <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[0.9] text-slate-900">
-                        Yesp <span className="text-gradient">Studio</span>
+                        Custom <span className="text-gradient">Automation</span> for Service Businesses & Agencies
                     </h1>
-                    <p className="text-2xl font-bold text-slate-700 max-w-lg leading-relaxed">
-                        Custom Automation for Service Businesses & Agencies
-                    </p>
                     <div className="space-y-6 max-w-lg">
                         <p className="text-slate-500 text-xl leading-relaxed">
-                            Yesp Studio helps service businesses automate lead handling, follow-ups, and internal workflows — so nothing slips through the cracks.
+                            YESP Studio architects bulletproof lead handling, follow-up automation, and internal workflow systems — so nothing slips through the cracks.
                         </p>
                     </div>
                     <div className="flex flex-wrap gap-6 items-center">

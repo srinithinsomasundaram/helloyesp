@@ -10,9 +10,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://yespstudio.com'),
-    title: "Yesp Studio | AI Automation for Businesses",
-    description: "Yesp Studio helps service businesses automate lead handling, follow-ups, and workflows with bulletproof AI automation systems.",
-    keywords: "srinithin somasundaram, srinithin, yesp founder, yesp, yesp studio, yesp corporation, yesp tech, yesp it company, yesp ai, ai agency, ai agency in india, ai agency in erode, ai agency in coimbatore, AI agents for business, Custom AI workflows, AI automation services, End-to-end AI solutions, AI integration & deployment, AI-driven process optimization",
+    title: {
+        template: '%s | YESP Studio',
+        default: 'Custom Automation for Service Businesses & Agencies | YESP Studio',
+    },
+    description: "YESP Studio architects bulletproof automation systems for service businesses and agencies. Specialized in lead handling, follow-up automation, and custom workflow engineering.",
+    keywords: "lead automation for service businesses, follow-up automation for agencies, business workflow automation services, CRM and lead automation, white-label automation for agencies, business process automation, yesp studio, automation partner for agencies",
     icons: {
         icon: "/logo.png",
         apple: "/logo.png",
@@ -21,23 +24,18 @@ export const metadata: Metadata = {
         canonical: '/',
     },
     openGraph: {
-        title: "Yesp Studio | AI Automation for Businesses",
-        description: "Bulletproof AI automation systems for service businesses and agencies",
+        title: "Custom Automation for Service Businesses & Agencies | YESP Studio",
+        description: "Scale your operations with bulletproof lead handling and workflow automation systems built for high-leverage service businesses.",
         url: 'https://yespstudio.com',
-        siteName: 'Yesp Studio',
+        siteName: 'YESP Studio',
         locale: 'en_US',
         type: 'website',
     },
     twitter: {
         card: 'summary_large_image',
-        title: "Yesp Studio | AI Automation for Businesses",
-        description: "Bulletproof AI automation systems for service businesses and agencies",
-    },
-    viewport: {
-        width: 'device-width',
-        initialScale: 1,
-        maximumScale: 5,
-    },
+        title: "Custom Automation for Service Businesses & Agencies | YESP Studio",
+        description: "Scale your operations with bulletproof lead handling and workflow automation systems built for high-leverage service businesses.",
+    }
 };
 
 export default function RootLayout({

@@ -75,8 +75,8 @@ export default function Services() {
                         transition={{ delay: 0.1 }}
                         className="text-7xl lg:text-8xl font-black text-slate-900 tracking-tight leading-[0.9]"
                     >
-                        System <br />
-                        <span className="text-blue-600">Capabilities.</span>
+                        Lead & Workflow <br />
+                        <span className="text-blue-600">Automation.</span>
                     </motion.h1>
 
                     <motion.p

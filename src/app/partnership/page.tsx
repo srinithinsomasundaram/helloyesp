@@ -27,8 +27,8 @@ export default function Partnership() {
                         transition={{ delay: 0.1 }}
                         className="text-7xl lg:text-8xl font-black text-slate-900 tracking-tight leading-[0.9]"
                     >
-                        Your Infrastructure <br />
-                        <span className="text-blue-600">Upgrade.</span>
+                        White-Label <br />
+                        <span className="text-blue-600">Automation Partner.</span>
                     </motion.h1>
 
                     <motion.p
