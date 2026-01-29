@@ -35,7 +35,7 @@ const Wire = ({ d, startDelay = 0 }: { d: string; startDelay?: number }) => (
         <path d={d} stroke="#E2E8F0" strokeWidth="1.5" fill="none" opacity="0.4" />
         <motion.circle r="3" fill="#3b82f6">
             <animateMotion path={d} dur="3s" begin={`${startDelay}s`} repeatCount="indefinite" />
-            <motion.animate attributeName="opacity" values="0;1;1;0" dur="3s" begin={`${startDelay}s`} repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0;1;1;0" dur="3s" begin={`${startDelay}s`} repeatCount="indefinite" />
         </motion.circle>
     </g>
 );

@@ -77,7 +77,7 @@ export default function Home() {
                     </h1>
                     <div className="space-y-6 max-w-lg">
                         <p className="text-slate-500 text-xl leading-relaxed">
-                            YESP Studio architects bulletproof lead handling, follow-up automation, and internal workflow systems — so nothing slips through the cracks.
+                            Yesp Studio architects bulletproof lead handling, follow-up automation, and internal workflow systems — so nothing slips through the cracks.
                         </p>
                     </div>
                     <div className="flex flex-wrap gap-6 items-center">
