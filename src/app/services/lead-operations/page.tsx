@@ -22,15 +22,25 @@ export default function LeadOperations() {
                     <div className="space-y-12">
                         <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-blue-50 text-blue-600 text-xs font-black uppercase tracking-widest">
                             <Zap className="w-3.5 h-3.5" />
-                            <span>Service Architecture</span>
+                            <span>Lead Capture Automation</span>
                         </div>
                         <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 tracking-tight leading-[0.9]">
-                            Lead <br />
-                            <span className="text-blue-600">Operations.</span>
+                            No Lead <br />
+                            <span className="text-blue-600">Lost. Ever.</span>
                         </h1>
                         <p className="text-2xl font-medium text-slate-500 leading-relaxed max-w-xl">
-                            Eliminate the manual gap between a lead reaching out and their record appearing in your CRM. We build the bridges that automate high-volume capture.
+                            Capture every lead from WhatsApp, Email, and Website forms. Push them instantly into your CRM. Eliminate manual entry completely.
                         </p>
+                        <div className="space-y-4">
+                            <p className="text-lg font-bold text-slate-900">Perfect for:</p>
+                            <div className="flex flex-wrap gap-3">
+                                {["Clinics", "Real Estate", "Gyms", "Service Businesses"].map((industry, i) => (
+                                    <span key={i} className="px-4 py-2 bg-slate-100 rounded-full text-sm font-bold text-slate-700">
+                                        {industry}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
                     </div>
 
                     <div className="relative group">
@@ -69,28 +79,28 @@ export default function LeadOperations() {
             <section className="bg-slate-50/50 py-40 border-y border-slate-100 relative">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center max-w-2xl mx-auto mb-24 space-y-4">
-                        <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">Delivery Protocol</h2>
-                        <p className="text-slate-500 text-xl font-medium">From raw enquiry to qualified CRM record in milliseconds.</p>
+                        <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">Business Problems We Solve</h2>
+                        <p className="text-slate-500 text-xl font-medium">The hidden costs draining your revenue every day.</p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                         {[
                             {
                                 step: "01",
-                                title: "Raw Capture",
-                                desc: "Our listeners pick up leads from any source — WhatsApp, email, or a landing page.",
+                                title: "Missed WhatsApp Messages",
+                                desc: "Leads reach out on WhatsApp while you're busy. By the time you respond, they've moved on to a competitor.",
                                 icon: MessageSquare
                             },
                             {
                                 step: "02",
-                                title: "Validation & Logic",
-                                desc: "The system cleans the data, removes duplicates, and ensures all required fields are present.",
+                                title: "Delayed Email Responses",
+                                desc: "Emails pile up. Manual sorting wastes hours. Hot leads get cold waiting for replies.",
                                 icon: Settings
                             },
                             {
                                 step: "03",
-                                title: "CRM Injection",
-                                desc: "Records are pushed directly to HubSpot, Pipedrive, or Salesforce with zero human touch.",
+                                title: "Leads Scattered Everywhere",
+                                desc: "WhatsApp, email, website forms—your leads are everywhere. Your CRM is nowhere near complete.",
                                 icon: Database
                             }
                         ].map((item, i) => (
@@ -106,6 +116,39 @@ export default function LeadOperations() {
                             </div>
                         ))}
                     </div>
+                </div>
+            </section>
+
+            {/* WHAT YOU GET */}
+            <section className="max-w-7xl mx-auto px-6">
+                <div className="text-center max-w-2xl mx-auto mb-20 space-y-4">
+                    <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">What You Actually Get</h2>
+                    <p className="text-slate-500 text-xl font-medium">Simple. Automatic. Bulletproof.</p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    {[
+                        {
+                            title: "Instant Capture",
+                            desc: "Every lead from WhatsApp, Email, and Website forms is captured the second they reach out.",
+                        },
+                        {
+                            title: "Auto-Push to CRM",
+                            desc: "Leads flow directly into HubSpot, Pipedrive, or Salesforce. No copy-paste. No delays.",
+                        },
+                        {
+                            title: "Zero Manual Work",
+                            desc: "Your team never touches data entry again. They focus on closing deals, not admin work.",
+                        }
+                    ].map((item, i) => (
+                        <div key={i} className="p-8 rounded-[2.5rem] bg-slate-50 border border-slate-100 space-y-4">
+                            <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
+                                <CheckCircle2 className="w-6 h-6 text-white" />
+                            </div>
+                            <h3 className="text-xl font-black text-slate-900">{item.title}</h3>
+                            <p className="text-slate-600 font-medium leading-relaxed">{item.desc}</p>
+                        </div>
+                    ))}
                 </div>
             </section>
 
@@ -149,10 +192,10 @@ export default function LeadOperations() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* CALL TO ACTION */}
-            <section className="max-w-7xl mx-auto px-6 text-center py-20">
+            < section className="max-w-7xl mx-auto px-6 text-center py-20" >
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -172,7 +215,7 @@ export default function LeadOperations() {
                         </div>
                     </div>
                 </motion.div>
-            </section>
-        </div>
+            </section >
+        </div >
     );
 }

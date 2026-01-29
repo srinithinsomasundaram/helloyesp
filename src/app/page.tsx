@@ -261,39 +261,39 @@ export default function Home() {
                         {[
                             {
                                 icon: MessageSquare,
-                                title: "Lead Operations",
-                                desc: "Automate lead capture from WhatsApp, Email, or Web and push directly into your CRM with zero manual entry.",
+                                title: "Lead Capture Automation",
+                                desc: "You'll never miss a lead again. Capture every inquiry from WhatsApp, Email, and Website forms instantly.",
                                 href: "/services/lead-operations"
                             },
                             {
                                 icon: Cpu,
                                 title: "AI Sales Brain",
-                                desc: "Use LLMs to qualify leads, classify intent, and draft personalized responses before your team even wakes up.",
+                                desc: "Your team talks only to serious buyers. AI qualifies leads, classifies intent, and drafts replies automatically.",
                                 href: "/services/ai-sales-brain"
                             },
                             {
                                 icon: RotateCw,
-                                title: "Smart Follow-ups",
-                                desc: "Multi-channel follow-up sequences that pause automatically when a human takes over or a meeting is booked.",
+                                title: "Smart Follow-Ups",
+                                desc: "Follow-ups happen even when you sleep. Automated sequences that stop when a human replies or meeting is booked.",
                                 href: "/services/smart-follow-ups"
                             },
                             {
                                 icon: Calendar,
-                                title: "Booking Logic",
-                                desc: "Connect Calendly or custom engines to handle complex scheduling, conflict resolution, and confirmation loops.",
+                                title: "Booking & Scheduling",
+                                desc: "Meetings booked without back-and-forth. Handles availability, confirmations, and reminders automatically.",
                                 href: "/services/booking-logic"
-                            },
-                            {
-                                icon: Terminal,
-                                title: "Custom Microservices",
-                                desc: "Need a unique tool? We build lightweight custom APIs and logic controllers to solve specific business problems.",
-                                href: "/services/custom-microservices"
                             },
                             {
                                 icon: Database,
                                 title: "System Syncing",
-                                desc: "Maintain a single source of truth by syncing data across Notion, AirTable, CRM, and internal databases in real-time.",
+                                desc: "Clean data. One version of reality. Real-time sync between Notion, Airtable, CRM, and databases.",
                                 href: "/services/system-syncing"
+                            },
+                            {
+                                icon: Terminal,
+                                title: "Custom Solutions",
+                                desc: "You get exactly what your business needs. Custom APIs and logic controllers for high-volume operations.",
+                                href: "/services/custom-microservices"
                             }
                         ].map((item, i) => (
                             <Link key={i} href={item.href}>

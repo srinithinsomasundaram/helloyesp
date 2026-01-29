@@ -5,7 +5,8 @@ import { useState } from 'react';
 import {
     Rocket, Cpu, Zap, ArrowRight,
     BookOpen, Clock, Calendar, Search,
-    MessageSquare, Target, CheckCircle2
+    MessageSquare, Target, CheckCircle2,
+    HeartPulse, Home, TrendingUp
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -79,58 +80,45 @@ export default function Blog() {
                 </div>
             </section>
 
-            {/* FEATURED STORY (FOUNDER) */}
-            <section className="max-w-7xl mx-auto px-6">
-                <div className="relative glass bg-slate-950 rounded-[4rem] p-12 md:p-24 overflow-hidden shadow-2xl group border border-slate-900">
-                    <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/20 blur-[150px] -z-10 rounded-full group-hover:bg-blue-600/30 transition-colors"></div>
-
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-                        <div className="space-y-10 relative z-10">
-                            <div className="space-y-6">
-                                <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-blue-600/10 text-blue-400 text-[10px] font-black uppercase tracking-[0.2em] border border-blue-600/20">
-                                    <span>Featured Story</span>
-                                </div>
-                                <h2 className="text-5xl md:text-6xl font-black text-white tracking-tight leading-tight">
-                                    The Philosophy Behind <br />
-                                    <span className="text-blue-500 text-slate-400">Yesp Studio.</span>
-                                </h2>
-                                <p className="text-slate-400 text-xl font-medium leading-relaxed">
-                                    Why Srinithin Somasundaram built an agency focused on "Bulletproof Reliability" in an era of AI hype.
-                                </p>
-                            </div>
-
-                            <div className="flex items-center space-x-6">
-                                <Link href="/blog/founders-story" className="px-12 py-5 bg-white text-slate-950 rounded-2xl text-lg font-black hover:scale-105 transition-transform flex items-center space-x-3">
-                                    <span>Read the story</span>
-                                    <ArrowRight className="w-5 h-5" />
-                                </Link>
-                                <span className="text-slate-600 font-bold text-sm tracking-widest uppercase">8 Min Read</span>
-                            </div>
-                        </div>
-
-                        <div className="relative group">
-                            <div className="relative aspect-square rounded-[3rem] overflow-hidden border border-slate-800">
-                                <Image
-                                    src="/founder.jpg"
-                                    alt="Srinithin Somasundaram"
-                                    fill
-                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                                />
-                                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-slate-950/80 to-transparent" />
-                                <div className="absolute bottom-10 left-10">
-                                    <p className="text-xs font-black text-blue-500 uppercase tracking-widest mb-2">Founder Profile</p>
-                                    <p className="text-2xl font-black text-white">Srinithin Somasundaram</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* RECENT POSTS PLACEHOLDER */}
+            {/* RECENT POSTS */}
             <section className="max-w-7xl mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     {[
+                        {
+                            cat: "Profile",
+                            title: "The Origin Logic: Why Yesp Studio Exists",
+                            desc: "The philosophy of absolute reliability in an era of artificial hype.",
+                            icon: Rocket,
+                            slug: "founders-story"
+                        },
+                        {
+                            cat: "Healthcare",
+                            title: "AI Agents in Healthcare: The New Frontier",
+                            desc: "Transforming patient experience from first click to post-op follow-up.",
+                            icon: HeartPulse,
+                            slug: "healthcare-ai-agents-1"
+                        },
+                        {
+                            cat: "Healthcare",
+                            title: "The No-Show Slayer: Clinic Automation",
+                            desc: "How AI Agents are eliminating manual scheduling and reducing no-shows.",
+                            icon: Calendar,
+                            slug: "healthcare-ai-agents-2"
+                        },
+                        {
+                            cat: "Real Estate",
+                            title: "The 24/7 Closer: AI in Real Estate",
+                            desc: "How AI Agents are closing deals while human agents sleep.",
+                            icon: Home,
+                            slug: "real-estate-ai-agents-1"
+                        },
+                        {
+                            cat: "Real Estate",
+                            title: "Lead Conversion Secrets for Agencies",
+                            desc: "Why modern real estate brokerages are switching to AI-driven conversion.",
+                            icon: TrendingUp,
+                            slug: "real-estate-ai-agents-2"
+                        },
                         {
                             cat: "Technical",
                             title: "Why Logic Beats Hype in AI Automation",

@@ -191,6 +191,8 @@ export default function Contact() {
                                 <div className="space-y-2">
                                     <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-4">Project Scope</label>
                                     <select name="scope" className="w-full bg-white border border-slate-100 rounded-2xl p-4 text-slate-900 font-bold focus:outline-none focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all shadow-sm appearance-none cursor-pointer">
+                                        <option>Healthcare Automation</option>
+                                        <option>Real Estate AI Agents</option>
                                         <option>Standard Automation Audit</option>
                                         <option>Custom System Build</option>
                                         <option>Agency Partnership</option>

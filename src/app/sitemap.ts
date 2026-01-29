@@ -85,6 +85,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.7,
         },
         {
+            url: `${baseUrl}/clinics`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.9,
+        },
+        {
             url: `${baseUrl}/locations/uk`,
             lastModified: new Date(),
             changeFrequency: 'weekly',
@@ -131,6 +137,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
             changeFrequency: 'yearly',
             priority: 0.3,
+        },
+        {
+            url: `${baseUrl}/blog/healthcare-ai-agents-1`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.6,
+        },
+        {
+            url: `${baseUrl}/blog/healthcare-ai-agents-2`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.6,
+        },
+        {
+            url: `${baseUrl}/blog/real-estate-ai-agents-1`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.6,
+        },
+        {
+            url: `${baseUrl}/blog/real-estate-ai-agents-2`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.6,
+        },
+        {
+            url: `${baseUrl}/blog/founders-story`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.6,
         },
     ];
 }

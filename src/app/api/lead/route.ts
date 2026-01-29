@@ -4,8 +4,13 @@ export async function POST(req: Request) {
     try {
         const body = await req.json();
 
+        // Use new webhook for Lead Popup, old one for everything else (e.g. Contact Form)
+        const webhookUrl = body.source === 'Global Lead Popup'
+            ? "https://n8n.yespstudio.com/webhook/274a2f0c-5176-4f15-8cf3-daa126f006f5"
+            : "https://n8n.yespstudio.com/webhook/5efac579-1d3b-4376-86bf-24ad0effbf26";
+
         const n8nRes = await fetch(
-            "https://n8n.yespstudio.com/webhook/5efac579-1d3b-4376-86bf-24ad0effbf26",
+            webhookUrl,
             {
                 method: "POST",
                 headers: {

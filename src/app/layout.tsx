@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar, Footer } from "@/components/Navigation";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { CookieConsent } from "@/components/CookieConsent";
+import { LeadPopup } from "@/components/LeadPopup";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -79,6 +80,7 @@ export default function RootLayout({
                     {children}
                 </main>
                 <WhatsAppButton />
+                <LeadPopup />
                 <CookieConsent />
                 <Footer />
             </body>
